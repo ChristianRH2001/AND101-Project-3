@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEAF9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/turtleLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/turtle"
+        android:contentDescription="Turtle logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in to TwitchForTurtles"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2D2A4A"
+        app:layout_constraintTop_toBottomOf="@id/turtleLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turtle name"
+        android:textSize="16sp"
+        android:textColor="#5E5E5E"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shell password"
+        android:textSize="16sp"
+        android:textColor="#5E5E5E"
+        app:layout_constraintTop_toBottomOf="@id/usernameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#9146FF"
+        app:layout_constraintTop_toBottomOf="@id/passwordLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp" />
+
+    <TextView
+        android:id="@+id/taglineText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Like ShellStreams? Log in to swim along and get updates when your favorite turtles go live!"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#4F4F4F"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
